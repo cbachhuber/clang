@@ -14,7 +14,8 @@ RUN apt-get update -qq; \
         clang-tidy-11 \
         clang-format-11 \
         cmake \
-        git
+        git \
+        make
 
 ENV CC /usr/bin/clang-11
 ENV CXX /usr/bin/clang++-11
