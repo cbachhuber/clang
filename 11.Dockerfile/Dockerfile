@@ -16,6 +16,8 @@ RUN apt-get update -qq; \
         cmake \
         git \
         make
+RUN ln -s /usr/bin/clang-tidy-11 /usr/bin/clang-tidy
+RUN ln -s /usr/bin/clang-format-11 /usr/bin/clang-format
 
 ENV CC /usr/bin/clang-11
 ENV CXX /usr/bin/clang++-11
