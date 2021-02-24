@@ -13,12 +13,15 @@ RUN apt-get update -qq && DEBIAN_FRONTENT=noninteractive apt-get install -qqy --
         clang-format-11 \
         cmake \
         git \
+        libc++-11-dev \
         llvm-11 \
         make \
         python3-pip
 RUN python3 -m pip install gcovr
+
 RUN ln -s /usr/bin/clang-tidy-11 /usr/bin/clang-tidy
 RUN ln -s /usr/bin/clang-format-11 /usr/bin/clang-format
+RUN ln -s /usr/lib/llvm-11/lib/libc++abi.so.1.0 /usr/local/lib/libc++abi.so
 
 ENV CC /usr/bin/clang-11
 ENV CXX /usr/bin/clang++-11

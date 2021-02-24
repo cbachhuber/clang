@@ -12,6 +12,7 @@ Tags and corresponding docker files:
   - clang-format-11
   - cmake 3.16.3
   - gcovr 4.2
+  - libc++-11-dev
   - llvm-tools-11
 - `latest`: [/11.Dockerfile](https://github.com/cbachhuber/clang/blob/master/11.Dockerfile/Dockerfile[) contains
   - clang-11
@@ -19,4 +20,5 @@ Tags and corresponding docker files:
   - clang-format-11
   - cmake 3.16.3
   - gcovr 4.2
+  - libc++-11-dev
   - llvm-tools-11
